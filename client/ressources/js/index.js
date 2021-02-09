@@ -1,5 +1,5 @@
 import {gameEngine} from "./engine.js"
-import * as Matter from 'matter-js'
+//import * as Matter from 'matter-js'
 
 // --- Importation des images --- :
 // blob ou ennemi
@@ -8,9 +8,9 @@ imgBlob.src = "../assets/sprites/slime.png"
 
 // Ninja ou Doodle
 var imgDoodleRight = new Image()
-imgDoodleRight.src = "../assets/sprites/Ninja/idle.PNG"
+imgDoodleRight.src = "../assets/sprites/Ninja/idle.png"
 var imgDoodleLeft = new Image()
-imgDoodleLeft.src = "../assets/sprites/Ninja/idle_left.PNG"
+imgDoodleLeft.src = "../assets/sprites/Ninja/idle_left.png"
 // platform ou gateway
 var imgPlatform = new Image()
 imgPlatform.src = "../assets/sprites/Platform/ground0.png"
