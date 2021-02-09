@@ -1,0 +1,6 @@
+.game-container{
+	text-align: center;
+}
+#doodle-canvas{
+	border:1px solid #000000;
+}

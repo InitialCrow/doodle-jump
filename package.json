@@ -1,0 +1,40 @@
+{
+  "name": "doodlejump",
+  "version": "0.0.1",
+  "description": "doodle jump game js",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack --config ./webpack.dev.js --watch",
+    "watch:server": "nodemon \"./dist/server.js\" --watch \"./dist\"",
+    "build:dev": "webpack --config ./webpack.dev.js",
+    "build:prod": "webpack --config ./webpack.prod.js",
+    "build:sw": "webpack --config ./webpack.sw.js",
+    "clear:dist": "rm -r ./dist",
+    "clear": "rm -rf ./dist rm -rf ./uploads rm -rf ./node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InitialCrow/doodle-jump.git"
+  },
+  "author": "InitialCrow, JaxPearl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InitialCrow/doodle-jump/issues"
+  },
+  "homepage": "https://github.com/InitialCrow/doodle-jump#readme"
+}
