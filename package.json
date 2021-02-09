@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "doodle jump game js",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "matter-js": "^0.16.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
